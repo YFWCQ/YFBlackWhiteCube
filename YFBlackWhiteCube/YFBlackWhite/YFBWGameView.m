@@ -98,6 +98,7 @@
 
 -(void)creatTimer
 {
+    
     if (_timer == nil)
     {
 //        _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(performGame) userInfo:nil repeats:YES];
@@ -107,8 +108,8 @@
         } userInfo:nil repeats:YES];
     }else
     {
-        [_timer fire];
-//        [_timer setFireDate:[NSDate  distantPast]];// 开启定时器
+//        [_timer fire];
+        [_timer setFireDate:[NSDate  distantPast]];// 开启定时器
     }
     
     
